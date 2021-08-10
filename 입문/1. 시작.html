@@ -1,0 +1,37 @@
+<!-- class 선택자 지정시 공백유무에 따른 적용범위
+ 간단히 
+ - 스페이스는 하위 엘리먼트에서 모두 조건에 맞는 엘리먼트를 찾는것
+- 붙어있으면 같은 엘리먼트에서 모든 조건에 맞는 엘리먼트를 찾는것-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>고양이의 일상</title>
+    <meta name="description" content="고양이가 좋아하는 것과 일상을 소개합니다." />
+    <style>
+      .ah_item .no2 > .ah_k {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ah_roll_area">
+      <ul class="ah_i">
+        <li class="ah_item no1">
+          <span class="ah_k">윤지호</span>
+        </li>
+        <li class="ah_item no2">
+          <span class="ah_k">차재이</span>
+          <span class="no2"
+            >김가루
+            <span class="ah_k">띄어쓰기 할경우 하위엘리먼트에서 찾는것임</span>
+          </span>
+        </li>
+        <li class="ah_item no3">
+          <span class="ah_k">장자연</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
