@@ -1,0 +1,60 @@
+<!--  수평 맞춤 justify-content
+- stretch(초깃값)	부모 요소의 높이 또는 콘텐츠의 가장 많은 자식 요소의 높이에 맞춰 늘어납니다.
+- flex-start	부모 요소의 윗부분에 맞춰 배치합니다.
+- flex-end	부모 요소의 아랫부분에 맞춰 배치합니다.
+- center	중앙에 배치합니다.
+- baseline	베이스라인에 배치합니다. -->
+
+<!-- 수직 맞춤  align-items
+- stretch(초깃값)	부모 요소의 높이 또는 콘텐츠의 가장 많은 자식 요소의 높이에 맞춰 늘어납니다.
+- flex-start	부모 요소의 윗부분에 맞춰 배치합니다.
+- flex-end	부모 요소의 아랫부분에 맞춰 배치합니다.
+- center	중앙에 배치합니다.
+- baseline	베이스라인에 배치합니다. -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레이아웃 만들기</title>
+    <meta name="description" content="수직 방향 맞춤 align-items 속성" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .item {
+        background: #0bd;
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .options {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+      .item2 {
+        background: #0bd;
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+    <div class="options">
+      <div class="item2">Item 1</div>
+      <div class="item2">Item 2</div>
+      <div class="item2">Item 3</div>
+      <div class="item2">Item 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!-- background-position: top center; 
+가로 방향은 “left(왼쪽)”, “center(중앙)”, “right(오른쪽”), 
+세로 방향은 “top(위)”, “center(중앙)”, “bottom(아래)”-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>배경 넣기</title>
+    <meta
+      name="description"
+      content="배경 이미지의 크기를 지정하는 “background-size 속성” contain"
+    />
+    <style>
+      div {
+        background-repeat: no-repeat;
+        background-image: url(../images/1.jpg);
+        background-size: contain; /*cover, contain을 지정합니다.*/
+        height: 10vh; /*vh 는 뷰포트 기준 배율*/
+        background-position: top center;
+
+        /* background: #70a2dc url(images/bg-airplane.jpg) no-repeat center bottom/cover;  한번에 작성하는것도 가능함*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>배경 이미지</p>
+    </div>
+  </body>
+</html>

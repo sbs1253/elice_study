@@ -1,0 +1,37 @@
+<!--  같은 크기의 박스를 균등한 간격으로 나열하는 레이아웃 CSS 그리드
+- Flex는 한 방향 레이아웃 시스템이고 (1차원)
+- Grid는 두 방향(가로-세로) 레이아웃 시스템 (2차원)
+-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레이아웃 만들기</title>
+    <meta name="description" content="CSS 그리드의 기본적인 사용 방법" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 너비를 비율로 나타냄 *px고정, fr 유동적*/
+        grid-template-rows: 200px 200px; /* grid 높이 변경*/
+        gap: 10px;
+      }
+      .item {
+        background: rgb(41, 221, 80);
+        color: white;
+        padding: 10px;
+        /* margin: 10px;  gap 사용시 끝부분은 여백 안들어감*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+  </body>
+</html>
